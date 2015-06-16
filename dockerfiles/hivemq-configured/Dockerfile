@@ -9,7 +9,7 @@ EXPOSE 2003
 RUN apt-get update
 RUN apt-get upgrade -y
 RUN apt-get install -y vim
-RUN apt-get install mosquitto-clients
+RUN apt-get install -y mosquitto-clients
 
 ADD configuration.properties hivemq/conf/configuration.properties
 ADD shareplaylearn_mqtt.jks hivemq/conf/shareplaylearn_mqtt.jks
