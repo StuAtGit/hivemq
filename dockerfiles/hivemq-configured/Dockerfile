@@ -2,9 +2,10 @@ FROM shareplaylearn/hivemq
 
 MAINTAINER stu26code@gmail.com
 
+EXPOSE 1883
 EXPOSE 8883
 EXPOSE 8000
-EXPOSE 2003
+EXPOSE 8001
 
 RUN apt-get update
 RUN apt-get upgrade -y
